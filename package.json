@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --inspect --ignore-watch node_modules ./server.ts",
-    "knex:migrate": "npx knex  --knexfile knexfile.ts migrate:latest"
+    "dev": "ts-node-dev --inspect --ignore-watch node_modules ./src/server.ts",
+    "knex:migrate": "npx knex  --knexfile knexfile.ts migrate:latest",
+    "knex:seed": "npx knex  --knexfile knexfile.ts seed:run"
   },
   "keywords": [],
   "author": "",
